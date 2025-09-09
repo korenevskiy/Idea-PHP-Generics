@@ -1,6 +1,6 @@
 # Idea-PHP-Generics
 
-‘‘‘
+```php
 class One{
 .   function __constructor(){
 .       echo __CLASSES__[0];// One
@@ -31,4 +31,4 @@ $obj3 = new One&int();
 // One
 // int
 
-‘‘‘
+```
