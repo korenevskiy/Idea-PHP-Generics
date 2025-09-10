@@ -23,10 +23,10 @@ trait traitOne {
 
 ```php
 $obj1 = new One&Two();
-echo $obj1->getObj();
+echo getclass($obj1->getObj());
 // One
 // Two
-// object
+// One&Two
 
 
 $obj2 = new One&traitOne();
