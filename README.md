@@ -15,8 +15,9 @@ trait traitOne {
 .      echo count(__CLASSES__);
 .   }
 }
+```
 
-
+```php
 $obj1 = new One&Two();
 // One
 // Two
@@ -34,21 +35,6 @@ $obj3 = new One&int();
 ```
 
 ```php
-class One{
-.   function __constructor(){
-.       echo __CLASSES__[0];// One
-.       echo __CLASSES__[1];// Two
-.   }
-}
-
-class Two{}
-
-trait traitOne {
-.   function funTrait(){
-.      echo count(__CLASSES__);
-.   }
-}
-
 
 $obj1 = new One|Two();
 // One
