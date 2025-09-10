@@ -8,7 +8,11 @@ class One{
 .   }
 }
 
-class Two{}
+class Two{
+.   function getObj():One|Two{
+.       return new One|Two();
+.   }
+}
 
 trait traitOne {
 .   function funTrait(){
@@ -19,8 +23,11 @@ trait traitOne {
 
 ```php
 $obj1 = new One&Two();
+echo $obj1->getObj();
 // One
 // Two
+// object
+
 
 $obj2 = new One&traitOne();
 $obj2->funTrait()
