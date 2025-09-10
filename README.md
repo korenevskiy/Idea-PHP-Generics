@@ -44,8 +44,10 @@ $obj3 = new One&int();
 ```php
 
 $obj1 = new One|Two();
+echo getclass($obj1->getObj());
 // One
 // Two
+// Exception: not support call 'getObj) function
 
 $obj2 = new One|traitOne();
 $obj2->funTrait()
