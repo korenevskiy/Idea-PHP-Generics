@@ -44,7 +44,7 @@ $obj2 = new One|traitOne();
 $obj2->funTrait()
 // One
 // Two
-// Exception: not call 'funTrait' function
+// Exception: not support call 'funTrait' function
 
 $obj3 = new One|int();
 // One
