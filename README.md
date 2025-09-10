@@ -11,7 +11,7 @@ class One{
 class Two{}
 
 trait traitOne {
-.   function funOne(){
+.   function funTrait(){
 .      echo count(__CLASSES__);
 .   }
 }
@@ -22,7 +22,7 @@ $obj1 = new One&Two();
 // Two
 
 $obj2 = new One&traitOne();
-$obj2->funOne()
+$obj2->funTrait()
 // One
 // Two
 // 2
